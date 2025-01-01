@@ -5,7 +5,7 @@ import numpy as np
 from tensorflow.python.keras.models import  load_model
 import tensorflow
 import base64
-model = tensorflow.keras.models.load_model(r"Emotion_Model.keras")
+model = tensorflow.keras.models.load_model(r"model_compressed.h5")
 st.title(":rainbow[Emotion-Detection]")
 button=st.button("Click For Camera")
 Stop=st.button("Click for End")
