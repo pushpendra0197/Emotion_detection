@@ -27,7 +27,7 @@ page_element=f"""
 """
 st.markdown(page_element,unsafe_allow_html=True)
 frame_window=st.image([])
-camera=cv2.VideoCapture(source_webcam)
+camera=cv2.VideoCapture(0)
 if button:
    try:
     while True:
