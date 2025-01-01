@@ -27,36 +27,7 @@ page_element=f"""
 """
 st.markdown(page_element,unsafe_allow_html=True)
 frame_window=st.image([])
-<DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camera Capture</title>
-</head>
-<body>
-    <h1>Camera Stream</h1>
-    <video id="videoElement" width="640" height="480" autoplay></video>
-    <script>
-        const video = document.getElementById('videoElement');
-
-        // Access the camera using getUserMedia
-        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({ video: true })
-                .then(function (stream) {
-                    video.srcObject = stream;
-                })
-                .catch(function (error) {
-                    console.error("Error accessing the camera: ", error);
-                });
-        } else {
-            console.log("getUserMedia is not supported in this browser.");
-        }
-    </script>
-</body>
-</html>
-
-camera=cv2.VideoCapture(0)
+camera=cv2.VideoCapture(1)
 if button:
    try:
     while True:
