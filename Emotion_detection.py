@@ -27,7 +27,7 @@ page_element=f"""
 """
 st.markdown(page_element,unsafe_allow_html=True)
 frame_window=st.image([])
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
