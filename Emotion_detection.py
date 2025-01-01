@@ -50,7 +50,4 @@ if button:
       print("Error Occur")
 if Stop:
     camera.release()
-
-foo = None
-print(foo.something)
          
