@@ -2,3 +2,4 @@ numpy
 pandas
 opencv-python-headless==4.10.0.84
 tensorflow==2.18.0
+streamlit_webrtc
